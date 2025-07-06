@@ -1,47 +1,3 @@
-// {
-//   "expo": {
-//     "name": "Aora",
-//     "slug": "Aora",
-//     "version": "1.0.0",
-//     "orientation": "portrait",
-//     "icon": "./assets/images/icon.png",
-//     "scheme": "aora",
-//     "userInterfaceStyle": "automatic",
-//     "newArchEnabled": true,
-//     "ios": {
-//       "supportsTablet": true
-//     },
-//     "android": {
-//       "adaptiveIcon": {
-//         "foregroundImage": "./assets/images/adaptive-icon.png",
-//         "backgroundColor": "#ffffff"
-//       },
-//       "edgeToEdgeEnabled": true
-//     },
-//     "web": {
-//       "bundler": "metro",
-//       "output": "static",
-//       "favicon": "./assets/images/favicon.png"
-//     },
-//     "plugins": [
-//       "expo-router",
-//       [
-//         "expo-splash-screen",
-//         {
-//           "image": "./assets/images/splash-icon.png",
-//           "imageWidth": 200,
-//           "resizeMode": "contain",
-//           "backgroundColor": "#ffffff"
-//         }
-//       ]
-//     ],
-//     "experiments": {
-//       "typedRoutes": true
-//     }
-//   }
-// }
-
-
 {
   "expo": {
     "name": "my-app",
@@ -59,20 +15,38 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.iosnerat.sam.myapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff",
         "package": "com.ndcompany.aora"
-      }
+      },
+      "package": "com.nerat_sam.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "c42809f7-9c02-4360-b7f4-186846739a89"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c42809f7-9c02-4360-b7f4-186846739a89"
+    },
+    "owner": "nerat_sam"
   }
 }
